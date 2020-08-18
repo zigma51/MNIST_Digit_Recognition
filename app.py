@@ -1,7 +1,6 @@
 import numpy as np
 from flask import Flask, request, jsonify, render_template
-import pickle
-from cv2 import cv2
+import cv2
 from tensorflow.keras.models import load_model
 import matplotlib.pyplot as plt
 # import tensorflow
