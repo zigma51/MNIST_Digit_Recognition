@@ -8,8 +8,7 @@ import matplotlib.pyplot as plt
 
 app = Flask(__name__)
 
-model = load_model("model_digit.h5")
-print("Loaded model from disk")
+# print("Loaded model from disk")
 
 @app.route('/')
 def home():
@@ -56,4 +55,5 @@ def predict():
 #     return jsonify(output)
 
 if __name__ == "__main__":
+    model = load_model("model_digit.h5")
     app.run(debug=True)
